@@ -14,7 +14,7 @@ const userschema=new schema({
         required:true
     }
 })
-Userschema.pre('save', async function () {
+userschema.pre('save', async function () {
     try {
         const user = this;
         const salt = await bcrypt.genSalt(10);
@@ -25,5 +25,5 @@ Userschema.pre('save', async function () {
         console.log(err)
     }
 })
-const usermodule=mongo.model('details',userschema)
+const usermodule=mongo.model('praveen',userschema)
 module.exports=usermodule
