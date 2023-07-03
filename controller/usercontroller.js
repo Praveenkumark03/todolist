@@ -1,4 +1,4 @@
-const todoService = require("../service/userservice")
+const controller = require("../service/userservice")
 const bcrypt=require('bcrypt')
 const register =async(req,res)=>{
     try{
