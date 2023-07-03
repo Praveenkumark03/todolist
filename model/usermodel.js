@@ -25,5 +25,5 @@ userschema.pre('save', async function () {
         console.log(err)
     }
 })
-const usermodule=mongo.model('praveen',userschema)
+const usermodule=mongo.model('praveens',userschema)
 module.exports=usermodule
